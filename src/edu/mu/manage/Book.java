@@ -114,7 +114,30 @@ public class Book {
 		return "Book [title=" + title + ", author=" + author + ", ISBN=" + ISBN + ", price=" + price + "]";
 	}
 	
-	
+	@Override
+	/**
+	 * Checks if two book objects are equal
+	 * @param obj
+	 * 		This argument in a general object that will
+	 * 		be cast to the object type we are testing is
+	 * 		equal or not.
+	 * @returns
+	 * 		Returns a boolean true if two objects are equals.
+	 * 		Returns a boolean false if two objects are not
+	 * 		equal.
+	 * */
+	public boolean equals(Object obj) {
+		Book book = (Book)obj;
+		
+		if(this.title.equals(book.getTitle()) &&
+				this.author.equals(book.getAuthor()) &&
+				this.ISBN.equals(book.getISBN()) &&
+				this.price == book.getPrice()) {
+			return true;
+		}
+		
+		return false;
+	}
 	
 	
 	
