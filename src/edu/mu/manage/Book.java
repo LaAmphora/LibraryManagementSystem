@@ -1,5 +1,7 @@
 package edu.mu.manage;
 
+import java.util.Objects;
+
 public class Book {
 	
 	private String title;
@@ -47,6 +49,63 @@ public class Book {
 	public Book(Book copy) {
 		this(copy.title, copy.author, copy.ISBN, copy.price);
 	}
+
+	/**
+	 * Gets the title of a Book object.
+	 * */
+	public String getTitle() {
+		return title;
+	}
+
+	/**
+	 * Sets the title of a Book object.
+	 * */
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	/**
+	 * Gets the author of a Book object.
+	 * */
+	public String getAuthor() {
+		return author;
+	}
+
+	/**
+	 * Sets the author of a Book object.
+	 * */
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	/**
+	 * Gets the ISBN of a Book object.
+	 * */
+	public String getISBN() {
+		return ISBN;
+	}
+
+	/**
+	 * Sets the ISBN of a Book object.
+	 * */
+	public void setISBN(String iSBN) {
+		ISBN = iSBN;
+	}
+
+	/**
+	 * Gets the price of a Book object.
+	 * */
+	public double getPrice() {
+		return price;
+	}
+
+	/**
+	 * Sets the price of a Book object.
+	 * */
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
 	
 	
 }
