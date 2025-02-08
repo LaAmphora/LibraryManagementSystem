@@ -105,6 +105,16 @@ public class Book {
 	public void setPrice(double price) {
 		this.price = price;
 	}
+
+	/**
+	 * Prints out all information associated with a Book object.
+	 * */
+	@Override
+	public String toString() {
+		return "Book [title=" + title + ", author=" + author + ", ISBN=" + ISBN + ", price=" + price + "]";
+	}
+	
+	
 	
 	
 	
