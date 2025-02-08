@@ -108,6 +108,8 @@ public class Book {
 
 	/**
 	 * Prints out all information associated with a Book object.
+	 * @return
+	 * 		Returns a string containing all Book object info.
 	 * */
 	@Override
 	public String toString() {
@@ -121,7 +123,7 @@ public class Book {
 	 * 		This argument in a general object that will
 	 * 		be cast to the object type we are testing is
 	 * 		equal or not.
-	 * @returns
+	 * @return
 	 * 		Returns a boolean true if two objects are equals.
 	 * 		Returns a boolean false if two objects are not
 	 * 		equal.
