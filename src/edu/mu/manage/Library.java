@@ -63,7 +63,7 @@ public class Library {
 				return true;
 			}
 		}
-		System.out.println("Book was not in the library. It was not removed.");
+		System.out.println("Cannot remove book "+ book.getTitle() +". It was not removed.");
 		return false;
 	}
 	
