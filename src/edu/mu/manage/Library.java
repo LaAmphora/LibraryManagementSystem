@@ -42,6 +42,32 @@ public class Library {
 	}
 	
 	/**
+	 * This is a method used to remove a book from the books array.
+	 * It finds the book within the array, moves the remaining books
+	 * to the left, and assigns a null value.
+	 * @param book
+	 * 		This is the item that is to be removed from the books array.
+	 * @return
+	 * 		Returns true if remove was successful, false if not successful.
+	 */
+	public boolean removeBook(Book book) {
+		
+		for (int i = 0; i < count; i++) { //looping through books
+			if (books[i].equals(book)) { //if we find the book in the array
+				for (int j = i; j < count - 1; j++) { 
+					books[j] = books[j + 1]; //move remaining books forward
+				}
+				books[count - 1] = null; //nullifying the last spot since it was moved forward
+				count--;
+				System.out.println("Book was removed.");
+				return true;
+			}
+		}
+		System.out.println("Book was not in the library. It was not removed.");
+		return false;
+	}
+	
+	/**
 	 * Getter for Book[] array.
 	 * @return
 	 * 		Returns the books array.
