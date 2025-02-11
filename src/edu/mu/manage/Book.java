@@ -47,9 +47,12 @@ public class Book {
 	 * 		This argument is the Book object the user wants to copy.
 	 * */
 	public Book(Book copy) {
-		this(copy.title, copy.author, copy.ISBN, copy.price);
-	}
-
+		this.title = copy.title;
+		this.author = copy.author;
+		this.ISBN = copy.ISBN;
+		this.price = copy.price;
+	}	
+		
 	/**
 	 * Gets the title of a Book object.
 	 * */
