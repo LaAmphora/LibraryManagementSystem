@@ -26,7 +26,7 @@ public class Library {
 	 * @return
 	 * 		Returns true if there is enough space in the array
 	 * 		to add a book. Returns false if there is not enough
-	 * 		space within the array.s
+	 * 		space within the arrays.
 	 */
 	public boolean addBook(Book book) {
 		
@@ -94,7 +94,7 @@ public class Library {
 	 */
 	public void displayBooks() {
 		for (int i = 0; i < count; i++) {
-			System.out.println(books[i].toString());
+			System.out.println((i+1) + ". " + books[i].toString());
 		} 
 	}
 	
